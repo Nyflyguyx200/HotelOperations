@@ -8,7 +8,7 @@ class EmployeeTest {
     @org.junit.jupiter.api.Test
     void punchIn_shouldSetStartTime() {
         // Arrange
-        Employee employee = new Employee("001", "John Doe", "IT", 25.0, 0.0);
+        Employee employee = new Employee("001", "John Doe", "Clerk", 25.0, 0.0);
 
         // Act
         employee.punchIn();
@@ -20,7 +20,7 @@ class EmployeeTest {
     @org.junit.jupiter.api.Test
     void punchIn_withSpecificTime_shouldSetStartTime() {
         // Arrange
-        Employee employee = new Employee("001", "John Doe", "IT", 25.0, 0.0);
+        Employee employee = new Employee("001", "John Doe", "Clerk", 25.0, 0.0);
         double startTime = 8.0; // 8:00 am
 
         // Act
